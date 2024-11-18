@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@500&family=Geist+Mono:wght@100..900&display=swap');
+
+body{
+    background-color: #1DB954;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+  font-family: "Geist Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    background-color: black;
+    color: white;
+    height: 65px;
+}
+
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+}
+
+nav ul li label{
+  font-family: "Edu AU VIC WA NT Pre", serif;
+  font-optical-sizing: auto;
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 1.3rem;
+}
+
+nav ul li{
+    padding: 0 14px;
+}
+
+.container{
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+    font-family: "Geist Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  display: flex;
+  margin: 23px auto;
+  width: 70%;
+  border-radius: 20px;
+  background-image: url('bg.jpg');
+  background-size: 100%;
+}
+
+.bottom{
+    background-color: black;
+    position: sticky;
+    height: 100px;
+    display: flexbox;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#myProgressBar{
+    width: 80vw;
+    margin: 12px 0;
+    cursor: pointer;
+}
+
+.icons{
+    text-align: center;
+}
+
+.icons i{
+    cursor: pointer;
+}
+
+.fa-backward-step{
+    padding: 0 20px;
+}
+
+.fa-play{
+    padding: 0 20px;
+}
+
+.fa-forward-step{
+    padding: 0 20px;
+}
+
+.songsList h1{
+    margin: 0 12px;
+}
+
+#songPlay{
+    padding: 0 12px;
+    cursor: pointer;
+}
+
+.songItemContainer{
+    margin-top: 20px;
+}
+
+.songItem{
+    display: flex;
+    height: 50px;
+    background-color: white;
+    color: black;
+    width: 100%;
+    margin: 12px 12px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.songItem img{
+    height: 50px;
+    margin: 0 10px;
+    border-radius: 34px;
+}
+
+.timeStamp{
+    margin: 0 12px;
+}
+
+.songInfo{
+   position: absolute;
+   bottom: 25px;
+   left: 200px;
+   color: white;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
